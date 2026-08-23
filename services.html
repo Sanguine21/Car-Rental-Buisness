@@ -1,0 +1,401 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Car rental with driver for weddings, events, travel & airport transfer in Madhubani, Bihar. 5-seater, 7-seater cars, vans & buses for any group size.">
+    <title>Our Services | Bihar Premium Cars</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600;9..144,700;9..144,800&family=Work+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        .page-header { background: linear-gradient(135deg, #241708 0%, #1E3350 100%); }
+        .service-detail { padding: 80px 0; background: #fff; }
+        .service-detail-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 50px; align-items: center; margin-bottom: 80px; }
+        .service-detail-grid:nth-child(even) { direction: rtl; }
+        .service-detail-grid:nth-child(even) > * { direction: ltr; }
+        .service-detail h3 { font-size: 32px; margin-bottom: 20px; }
+        .service-detail p { color: #666; margin-bottom: 20px; line-height: 1.8; }
+        .service-detail ul { margin: 20px 0; }
+        .service-detail li { padding: 10px 0; border-bottom: 1px solid #eee; color: #444; }
+        .service-detail li i { color: #C1442B; margin-right: 10px; }
+        .service-image img { width: 100%; border-radius: 20px; box-shadow: 0 10px 30px rgba(0,0,0,0.1); }
+        .service-image.real-photo-frame { position: relative; }
+
+        /* Wedding roles strip */
+        .wedding-roles { padding: 70px 0; background: #FBF1DE; }
+        .role-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 28px; }
+        .role-card { background: white; border-radius: 20px; padding: 34px 26px; text-align: center; box-shadow: 0 6px 24px rgba(0,0,0,0.06); transition: var(--transition); }
+        .role-card:hover { transform: translateY(-8px); box-shadow: var(--shadow); }
+        .role-icon { width: 74px; height: 74px; border-radius: 50%; margin: 0 auto 18px; display: flex; align-items: center; justify-content: center; font-size: 30px; color: white; background: linear-gradient(135deg, #C1442B, #E2A73B); }
+        .role-card:nth-child(2) .role-icon { background: linear-gradient(135deg, #ec4899, #f472b6); }
+        .role-card:nth-child(3) .role-icon { background: linear-gradient(135deg, #1E3350, #33231A); }
+        .role-card h3 { font-size: 19px; margin-bottom: 10px; }
+        .role-card p { color: #666; font-size: 14px; line-height: 1.7; margin-bottom: 18px; }
+
+        /* Fleet by size */
+        .fleet-by-size { padding: 80px 0; background: #f1f5f9; }
+        .size-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 22px; }
+        .size-card { background: white; border-radius: 18px; padding: 30px 20px; text-align: center; box-shadow: 0 4px 18px rgba(0,0,0,0.06); }
+        .size-card i { font-size: 32px; color: var(--primary-color); margin-bottom: 14px; }
+        .size-card h4 { font-size: 17px; margin-bottom: 6px; }
+        .size-card span { font-size: 13px; color: var(--gray); }
+
+        .faq-section { padding: 80px 0; background: #fff; }
+        .faq-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 30px; }
+        .faq-item { background: #f8f9fa; padding: 30px; border-radius: 15px; }
+        .faq-item h4 { margin-bottom: 15px; color: #33231A; }
+        .faq-item p { color: #666; line-height: 1.7; }
+    </style>
+</head>
+<body>
+
+    <!-- Top Bar -->
+    <div class="top-bar">
+        <div class="container">
+            <div class="top-contact">
+                <span><i class="fas fa-phone-alt"></i> +91 81696 73379</span>
+                <span><i class="fas fa-envelope"></i> toursandtravelsmithila@gmail.com</span>
+                <span><i class="fas fa-map-marker"></i> Laheriyaganj, Madhubani, Bihar</span>
+            </div>
+        </div>
+    </div>
+
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container">
+            <div class="logo">
+                <div class="logo-mark" aria-hidden="true">
+                    <svg viewBox="0 0 40 40" xmlns="http://www.w3.org/2000/svg">
+                        <circle cx="20" cy="20" r="9" fill="#E2A73B"/>
+                        <g stroke="#241708" stroke-width="2" stroke-linecap="round">
+                            <line x1="20" y1="2" x2="20" y2="8"/>
+                            <line x1="20" y1="32" x2="20" y2="38"/>
+                            <line x1="2" y1="20" x2="8" y2="20"/>
+                            <line x1="32" y1="20" x2="38" y2="20"/>
+                            <line x1="7" y1="7" x2="11.5" y2="11.5"/>
+                            <line x1="28.5" y1="28.5" x2="33" y2="33"/>
+                            <line x1="33" y1="7" x2="28.5" y2="11.5"/>
+                            <line x1="11.5" y1="28.5" x2="7" y2="33"/>
+                        </g>
+                        <circle cx="20" cy="20" r="9" fill="none" stroke="#241708" stroke-width="2"/>
+                    </svg>
+                </div>
+                <h1>Mithila<span>Tours &amp; Travels</span></h1>
+            </div>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                
+                <li><a href="services.html" class="active">Services</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="booking.html" class="btn-nav">Book Now</a></li>
+            </ul>
+            <div class="hamburger"><i class="fas fa-bars"></i></div>
+            <div class="nav-overlay"></div>
+        </div>
+    </nav>
+
+    <!-- Page Header -->
+    <section class="page-header">
+        <div class="container">
+            <h1>Our Services</h1>
+            <p>Car rental with driver for every need — weddings, events, travel & airport transfer</p>
+        </div>
+    </section>
+
+    <!-- Service Details -->
+    <section class="service-detail">
+        <div class="container">
+
+            <!-- Service 1: Wedding -->
+            <div class="service-detail-grid">
+                <div class="service-content">
+                    <h3>Wedding Car Rental</h3>
+                    <p>Make your special day even more special with our luxury wedding car rental service. Your wedding day is one of the most important days of your life, and we are here to make it memorable — from the groom's grand entry to the bride's decorated ride and comfortable travel for every guest.</p>
+                    <p>Our well-maintained cars can be decorated with fresh flowers and elegant ribbons to match your wedding theme. Our professional drivers dress formally and treat your family like royalty.</p>
+                    <ul>
+                        <li><i class="fas fa-check"></i> Beautiful flower & ribbon decoration</li>
+                        <li><i class="fas fa-check"></i> Separate cars for groom, bride & guests</li>
+                        <li><i class="fas fa-check"></i> Professional & polite drivers</li>
+                        <li><i class="fas fa-check"></i> On-time pickup & drop, wedding-day coordination</li>
+                        <li><i class="fas fa-check"></i> Fortuner, Scorpio, Innova & buses for guests</li>
+                    </ul>
+                    <a href="booking.html" class="btn-primary">Book for Wedding</a>
+                </div>
+                <div class="service-image real-photo-frame">
+                    <img src="wedding-car-2.jpg" alt="Our decorated wedding car">
+                    <span class="real-photo-badge"><i class="fas fa-check-circle"></i> Real car, real customer</span>
+                </div>
+            </div>
+
+            <!-- Service 2: Local Travel -->
+            <div class="service-detail-grid">
+                <div class="service-content">
+                    <h3>Local & Point-to-Point Travel</h3>
+                    <p>Not every trip is a long journey. Need a car for a doctor's visit, a shopping trip, a local function, or just to get somewhere in or around Madhubani? We handle short, local rides with the same reliable car and driver — no long-distance commitment needed.</p>
+                    <p>Call or WhatsApp us with your pickup point and destination, and we'll arrange a car for that single trip or for the day.</p>
+                    <ul>
+                        <li><i class="fas fa-check"></i> Short local trips within Madhubani & nearby</li>
+                        <li><i class="fas fa-check"></i> By the trip or by the hour</li>
+                        <li><i class="fas fa-check"></i> Same trusted drivers, no minimum distance</li>
+                        <li><i class="fas fa-check"></i> Quick booking over call or WhatsApp</li>
+                    </ul>
+                    <a href="booking.html" class="btn-primary">Book a Local Ride</a>
+                </div>
+                <div class="service-image">
+                    <img src="https://images.unsplash.com/photo-1642167177659-4ae9ff6eaec3?w=500" alt="Local car ride with driver">
+                </div>
+            </div>
+
+            <!-- Service 3: Airport Transfer -->
+            <div class="service-detail-grid">
+                <div class="service-content">
+                    <h3>Airport Transfer</h3>
+                    <p>Start your journey on time and without stress with our reliable airport transfer service. We provide pickup and drop to Patna Airport, Gaya Airport, and Darbhanga Airport.</p>
+                    <p>Our drivers track your flight status to ensure a timely pickup even if your flight is delayed, and help with luggage for a comfortable ride to your destination.</p>
+                    <ul>
+                        <li><i class="fas fa-check"></i> 24/7 airport pickup & drop</li>
+                        <li><i class="fas fa-check"></i> Live flight tracking</li>
+                        <li><i class="fas fa-check"></i> Help with luggage</li>
+                        <li><i class="fas fa-check"></i> Clean, air-conditioned cars</li>
+                    </ul>
+                    <a href="booking.html" class="btn-primary">Book Airport Transfer</a>
+                </div>
+                <div class="service-image">
+                    <img src="https://images.unsplash.com/photo-1545985548-25d056e14bd5?w=500" alt="Airport transfer">
+                </div>
+            </div>
+
+            <!-- Service 4: Outstation -->
+            <div class="service-detail-grid">
+                <div class="service-content">
+                    <h3>Outstation & Long Distance</h3>
+                    <p>Planning a trip outside Bihar? We offer comfortable outstation rides to any city, including neighbouring states like Jharkhand (Deoghar) and West Bengal (Kolkata), with experienced drivers who know long-route travel.</p>
+                    <p>Perfect for family functions, business trips, or long vacations — with well-maintained vehicles and transparent, negotiable pricing.</p>
+                    <ul>
+                        <li><i class="fas fa-check"></i> One-way & round-trip options</li>
+                        <li><i class="fas fa-check"></i> Multi-day trip support</li>
+                        <li><i class="fas fa-check"></i> Transparent, negotiable rates</li>
+                        <li><i class="fas fa-check"></i> Safe night driving with rested drivers</li>
+                    </ul>
+                    <a href="booking.html" class="btn-primary">Book Outstation Trip</a>
+                </div>
+                <div class="service-image">
+                    <img src="https://images.unsplash.com/photo-1643694616837-cb9045d1aaf2?w=500" alt="Car ready for an outstation road trip in India">
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Wedding Roles -->
+    <section class="wedding-roles">
+        <div class="container">
+            <div class="section-header">
+                <span class="subtitle">Wedding Bookings</span>
+                <h2>One Wedding, Every Ride Covered</h2>
+                <p>Tell us who the car is for — we arrange the right vehicle for each part of the wedding.</p>
+            </div>
+            <div class="role-grid">
+                <div class="role-card">
+                    <div class="role-icon"><i class="fas fa-user-tie"></i></div>
+                    <h3>For the Groom</h3>
+                    <p>A decorated premium car (Fortuner / Scorpio) for the groom's grand entry.</p>
+                    <a href="booking.html" class="btn-primary">Book for Groom</a>
+                </div>
+                <div class="role-card">
+                    <div class="role-icon"><i class="fas fa-gem"></i></div>
+                    <h3>For the Bride</h3>
+                    <p>An elegantly decorated, comfortable car for the bride's departure and doli ceremony.</p>
+                    <a href="booking.html" class="btn-primary">Book for Bride</a>
+                </div>
+                <div class="role-card">
+                    <div class="role-icon"><i class="fas fa-users"></i></div>
+                    <h3>For Guests</h3>
+                    <p>Multiple cars or a full bus to move your baraat and relatives together.</p>
+                    <a href="booking.html" class="btn-primary">Book for Guests</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Fleet by size -->
+    <section class="fleet-by-size">
+        <div class="container">
+            <div class="section-header">
+                <span class="subtitle">Choose by Group Size</span>
+                <h2>A Vehicle for Every Group</h2>
+            </div>
+            <div class="size-grid">
+                <div class="size-card">
+                    <i class="fas fa-car"></i>
+                    <h4>5-Seater</h4>
+                    <span>Dzire, Ertiga — small family / solo trips</span>
+                </div>
+                <div class="size-card">
+                    <i class="fas fa-car-side"></i>
+                    <h4>7-Seater</h4>
+                    <span>Scorpio, Innova, Fortuner — families & groom/bride cars</span>
+                </div>
+                <div class="size-card">
+                    <i class="fas fa-shuttle-van"></i>
+                    <h4>12–17 Seater</h4>
+                    <span>Van — guest groups & long trips</span>
+                </div>
+                <div class="size-card">
+                    <i class="fas fa-bus-alt"></i>
+                    <h4>Bus (30+)</h4>
+                    <span>Full baraat, large groups & long-distance travel</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="faq-section">
+        <div class="container">
+            <div class="section-header">
+                <span class="subtitle">FAQ</span>
+                <h2>Frequently Asked Questions</h2>
+            </div>
+            <div class="faq-grid">
+                <div class="faq-item">
+                    <h4><i class="fas fa-question-circle"></i> How do I book a car?</h4>
+                    <p>Fill out the booking form on our website, call us, or message us on WhatsApp. Our team will contact you to confirm the booking.</p>
+                </div>
+                <div class="faq-item">
+                    <h4><i class="fas fa-question-circle"></i> Can I book separate cars for groom, bride & guests?</h4>
+                    <p>Yes — just mention it in the booking form or call us, and we'll arrange the right vehicles for each part of the wedding, including a bus for large groups.</p>
+                </div>
+                <div class="faq-item">
+                    <h4><i class="fas fa-question-circle"></i> Do you provide drivers?</h4>
+                    <p>Yes! All our rentals come with a professional, experienced driver.</p>
+                </div>
+                <div class="faq-item">
+                    <h4><i class="fas fa-question-circle"></i> What areas do you serve?</h4>
+                    <p>We are based in Laheriyaganj, Madhubani and serve all over Bihar, plus outstation trips to West Bengal, Jharkhand and beyond.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA -->
+    <section class="cta-section">
+        <div class="container">
+            <h2>Ready to Book Your Journey?</h2>
+            <p>Contact us now for the best deals on car rental in Bihar</p>
+            <a href="booking.html" class="btn-primary" style="background:white;color:#C1442B;">Book Now</a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="site-footer">
+        <svg class="footer-top-wave" viewBox="0 0 1200 18" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M0,9 Q30,0 60,9 T120,9 T180,9 T240,9 T300,9 T360,9 T420,9 T480,9 T540,9 T600,9 T660,9 T720,9 T780,9 T840,9 T900,9 T960,9 T1020,9 T1080,9 T1140,9 T1200,9" fill="none" stroke="#E2A73B" stroke-width="1.5" opacity="0.5"/>
+        </svg>
+        <div class="container">
+            <div class="footer-main">
+                <div class="footer-brand-col">
+                    <div class="footer-brand">
+                        <div class="logo-mark" aria-hidden="true">
+                            <svg viewBox="0 0 40 40" xmlns="http://www.w3.org/2000/svg">
+                                <circle cx="20" cy="20" r="9" fill="#E2A73B"/>
+                                <g stroke="#FBF1DE" stroke-width="2" stroke-linecap="round">
+                                    <line x1="20" y1="2" x2="20" y2="8"/>
+                                    <line x1="20" y1="32" x2="20" y2="38"/>
+                                    <line x1="2" y1="20" x2="8" y2="20"/>
+                                    <line x1="32" y1="20" x2="38" y2="20"/>
+                                    <line x1="7" y1="7" x2="11.5" y2="11.5"/>
+                                    <line x1="28.5" y1="28.5" x2="33" y2="33"/>
+                                    <line x1="33" y1="7" x2="28.5" y2="11.5"/>
+                                    <line x1="11.5" y1="28.5" x2="7" y2="33"/>
+                                </g>
+                                <circle cx="20" cy="20" r="9" fill="none" stroke="#FBF1DE" stroke-width="2"/>
+                            </svg>
+                        </div>
+                        <h3>Mithila<span>Tours &amp; Travels</span></h3>
+                    </div>
+                    <p class="footer-about-text">Local car rental with driver, based in Laheriyaganj, Madhubani, Bihar. Weddings, events, and travel — no fixed packages, just the ride you need.</p>
+                </div>
+
+                <div class="footer-links-col">
+                    <h4>Quick Links</h4>
+                    <ul class="footer-links">
+                        <li><a href="index.html"><i class="fas fa-caret-right"></i> Home</a></li>
+                        <li><a href="services.html"><i class="fas fa-caret-right"></i> Services</a></li>
+                        <li><a href="booking.html"><i class="fas fa-caret-right"></i> Book Now</a></li>
+                        <li><a href="contact.html"><i class="fas fa-caret-right"></i> Contact</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-links-col">
+                    <h4>Our Services</h4>
+                    <ul class="footer-links">
+                        <li><a href="services.html"><i class="fas fa-caret-right"></i> Wedding Cars</a></li>
+                        <li><a href="services.html"><i class="fas fa-caret-right"></i> Local & Point-to-Point Travel</a></li>
+                        <li><a href="services.html"><i class="fas fa-caret-right"></i> Airport Transfer</a></li>
+                        <li><a href="services.html"><i class="fas fa-caret-right"></i> Outstation Trips</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-contact-col">
+                    <h4>Reach Us</h4>
+                    <div class="footer-contact-item">
+                        <i class="fas fa-phone-alt"></i>
+                        <div><a href="tel:+918169673379">+91 81696 73379</a></div>
+                    </div>
+                    <div class="footer-contact-item">
+                        <i class="fas fa-envelope"></i>
+                        <div><a href="mailto:toursandtravelsmithila@gmail.com">toursandtravelsmithila@gmail.com</a></div>
+                    </div>
+                    <div class="footer-contact-item">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <div>Laheriyaganj, Madhubani, Bihar</div>
+                    </div>
+                    <div class="footer-contact-item">
+                        <i class="fas fa-clock"></i>
+                        <div>Available 24/7</div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <p>&copy; 2024 Mithila Tours &amp; Travels. All Rights Reserved.</p>
+                <p class="made-with">Serving Madhubani &amp; all of Bihar <i class="fas fa-map-marker-alt"></i></p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Floating WhatsApp -->
+    <a href="https://wa.me/918169673379?text=Hi%2C%20I%20want%20to%20book%20a%20car" target="_blank" class="whatsapp-float" aria-label="Chat on WhatsApp"><i class="fab fa-whatsapp"></i></a>
+    <button class="scroll-top" id="scrollTopBtn" aria-label="Scroll to top"><i class="fas fa-arrow-up"></i></button>
+
+    <script>
+        (function(){
+            var ham = document.querySelector('.hamburger');
+            var nav = document.querySelector('.nav-links');
+            var overlay = document.querySelector('.nav-overlay');
+            ham.addEventListener('click', function(){ nav.classList.toggle('active'); overlay.classList.toggle('active'); });
+            overlay.addEventListener('click', function(){ nav.classList.remove('active'); overlay.classList.remove('active'); });
+            document.querySelectorAll('.nav-links a').forEach(function(a){
+                a.addEventListener('click', function(){ nav.classList.remove('active'); overlay.classList.remove('active'); });
+            });
+        })();
+        (function(){
+            var btn = document.getElementById('scrollTopBtn');
+            window.addEventListener('scroll', function(){
+                btn.classList.toggle('show', window.scrollY > 400);
+            });
+            btn.addEventListener('click', function(){ window.scrollTo({top:0, behavior:'smooth'}); });
+        })();
+        (function(){
+            var items = document.querySelectorAll('.role-card, .size-card, .faq-item, .service-detail-grid');
+            items.forEach(function(el){ el.classList.add('reveal'); });
+            var obs = new IntersectionObserver(function(entries){
+                entries.forEach(function(entry){ if(entry.isIntersecting){ entry.target.classList.add('in-view'); obs.unobserve(entry.target); } });
+            }, {threshold: 0.15});
+            items.forEach(function(el){ obs.observe(el); });
+        })();
+    </script>
+</body>
+</html>

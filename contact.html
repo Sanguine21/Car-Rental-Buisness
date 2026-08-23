@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us | Bihar Premium Cars</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600;9..144,700;9..144,800&family=Work+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        /* Additional CSS for Contact Page */
+        .page-header { background: linear-gradient(135deg, #241708 0%, #1E3350 100%); }
+        .contact-section { padding: 80px 0; background: #fff; }
+        .contact-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 50px; }
+        .contact-form { background: #f8f9fa; padding: 40px; border-radius: 20px; }
+        .contact-form h3 { margin-bottom: 10px; }
+        .contact-form p { margin-bottom: 30px; color: #666; }
+        .form-group { margin-bottom: 20px; }
+        .form-group label { display: block; margin-bottom: 8px; font-weight: 600; color: #333; }
+        .form-group input, .form-group textarea { width: 100%; padding: 15px; border: 1px solid #ddd; border-radius: 10px; font-size: 16px; font-family: inherit; }
+        .form-group input:focus, .form-group textarea:focus { outline: none; border-color: #C1442B; }
+        .btn-submit { width: 100%; background: #C1442B; color: white; padding: 18px; border: none; border-radius: 10px; font-size: 18px; font-weight: 600; cursor: pointer; transition: all 0.3s; }
+        .btn-submit:hover { background: #9C3521; }
+        
+        .contact-info-card { background: #241708; color: white; padding: 40px; border-radius: 20px; height: 100%; }
+        .contact-info-card h3 { color: white; margin-bottom: 20px; }
+        .contact-info-card p { opacity: 0.8; margin-bottom: 30px; }
+        .info-box { display: flex; align-items: flex-start; margin-bottom: 25px; }
+        .info-box i { width: 50px; height: 50px; background: rgba(255,255,255,0.1); color: #C1442B; display: flex; align-items: center; justify-content: center; border-radius: 10px; font-size: 20px; margin-right: 15px; flex-shrink: 0; }
+        .info-box-text h4 { color: white; margin-bottom: 5px; font-size: 16px; }
+        .info-box-text p { margin: 0; color: rgba(255,255,255,0.7); font-size: 15px; }
+        
+        .map-section { padding: 0 0 80px; }
+        .map-container { border-radius: 20px; overflow: hidden; height: 400px; background: #eee; display: flex; align-items: center; justify-content: center; }
+        .map-container iframe { width: 100%; height: 100%; border: none; }
+        
+        .faq-section { padding: 80px 0; background: #f8f9fa; }
+        .faq-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 30px; }
+        .faq-item { background: white; padding: 30px; border-radius: 15px; }
+        .faq-item h4 { margin-bottom: 15px; color: #33231A; }
+        .faq-item p { color: #666; line-height: 1.7; }
+    </style>
+</head>
+<body>
+
+    <!-- Top Bar -->
+    <div class="top-bar">
+        <div class="container">
+            <div class="top-contact">
+                <span><i class="fas fa-phone-alt"></i> +91 81696 73379</span>
+                <span><i class="fas fa-envelope"></i> toursandtravelsmithila@gmail.com</span>
+                <span><i class="fas fa-map-marker"></i> Laheriyaganj, Madhubani, Bihar</span>
+            </div>
+        </div>
+    </div>
+
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container">
+            <div class="logo">
+                <div class="logo-mark" aria-hidden="true">
+                    <svg viewBox="0 0 40 40" xmlns="http://www.w3.org/2000/svg">
+                        <circle cx="20" cy="20" r="9" fill="#E2A73B"/>
+                        <g stroke="#241708" stroke-width="2" stroke-linecap="round">
+                            <line x1="20" y1="2" x2="20" y2="8"/>
+                            <line x1="20" y1="32" x2="20" y2="38"/>
+                            <line x1="2" y1="20" x2="8" y2="20"/>
+                            <line x1="32" y1="20" x2="38" y2="20"/>
+                            <line x1="7" y1="7" x2="11.5" y2="11.5"/>
+                            <line x1="28.5" y1="28.5" x2="33" y2="33"/>
+                            <line x1="33" y1="7" x2="28.5" y2="11.5"/>
+                            <line x1="11.5" y1="28.5" x2="7" y2="33"/>
+                        </g>
+                        <circle cx="20" cy="20" r="9" fill="none" stroke="#241708" stroke-width="2"/>
+                    </svg>
+                </div>
+                <h1>Mithila<span>Tours &amp; Travels</span></h1>
+            </div>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                
+                <li><a href="services.html">Services</a></li>
+                <li><a href="contact.html" class="active">Contact</a></li>
+                <li><a href="booking.html" class="btn-nav">Book Now</a></li>
+            </ul>
+            <div class="hamburger"><i class="fas fa-bars"></i></div>
+            <div class="nav-overlay"></div>
+        </div>
+    </nav>
+
+    <!-- Page Header -->
+    <section class="page-header">
+        <div class="container">
+            <h1>Contact Us</h1>
+            <p>Get in touch with us for bookings and inquiries</p>
+        </div>
+    </section>
+
+    <!-- Contact Form Section -->
+    <section class="contact-section">
+        <div class="container">
+            <div class="contact-grid">
+                <div class="contact-form">
+                    <h3>Send us a Message</h3>
+                    <p>Have questions? Fill the form below and we will get back to you within 24 hours.</p>
+                    
+                    <form id="contactForm" action="https://formspree.io/f/mzepwvoe" method="POST">
+                        <div class="form-group">
+                            <label>Your Name</label>
+                            <input type="text" name="name" required placeholder="Enter your name">
+                        </div>
+                        <div class="form-group">
+                            <label>Phone Number</label>
+                            <input type="tel" name="phone" required placeholder="10-digit mobile number">
+                        </div>
+                        <div class="form-group">
+                            <label>Email Address</label>
+                            <input type="email" name="email" placeholder="your@email.com">
+                        </div>
+                        <div class="form-group">
+                            <label>Message</label>
+                            <textarea name="message" rows="5" required placeholder="Tell us how we can help you..."></textarea>
+                        </div>
+                        <button type="submit" class="btn-submit">
+                            <i class="fas fa-paper-plane"></i> Send Message
+                        </button>
+                        <p id="formstatus" style="margin-top: 15px;"></p>
+                    </form>
+                </div>
+
+                <div class="contact-info-card">
+                    <h3>Contact Information</h3>
+                    <p>Reach out to us through any of these channels</p>
+
+                    <div class="info-box">
+                        <i class="fas fa-phone-alt"></i>
+                        <div class="info-box-text">
+                            <h4>Phone / WhatsApp</h4>
+                            <p>+91 81696 73379</p>
+                        </div>
+                    </div>
+
+                    <div class="info-box">
+                        <i class="fas fa-envelope"></i>
+                        <div class="info-box-text">
+                            <h4>Email</h4>
+                            <p>toursandtravelsmithila@gmail.com</p>
+                        </div>
+                    </div>
+
+                    <div class="info-box">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <div class="info-box-text">
+                            <h4>Service Area</h4>
+                            <p>Patna, Gaya, Rajgir, Nalanda, and all over Bihar</p>
+                        </div>
+                    </div>
+
+                    <div class="info-box">
+                        <i class="fas fa-clock"></i>
+                        <div class="info-box-text">
+                            <h4>Working Hours</h4>
+                            <p>24/7 - We are always available for you</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Map Section -->
+    <section class="map-section">
+        <div class="container">
+            <div class="map-container">
+                <!-- Replace with actual Google Map embed code for Bihar -->
+                <iframe src="https://maps.google.com/maps?q=Bharat%20Petroleum%20Petrol%20Pump%2C%20Satyadev%2C%20Laheriyaganj%2C%20Madhubani%2C%20Bihar&output=embed" allowfullscreen="" loading="lazy"></iframe>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="faq-section">
+        <div class="container">
+            <div class="section-header">
+                <span class="subtitle">FAQ</span>
+                <h2>Frequently Asked Questions</h2>
+            </div>
+            <div class="faq-grid">
+                <div class="faq-item">
+                    <h4><i class="fas fa-question-circle"></i> How do I book a car?</h4>
+                    <p>Simply fill out the booking form on our website or call us directly. Our team will contact you to confirm the booking.</p>
+                </div>
+                <div class="faq-item">
+                    <h4><i class="fas fa-question-circle"></i> What is the minimum booking time?</h4>
+                    <p>We offer daily and weekly rentals. For weddings, we recommend booking at least 1 week in advance.</p>
+                </div>
+                <div class="faq-item">
+                    <h4><i class="fas fa-question-circle"></i> Do you provide drivers?</h4>
+                    <p>Yes! All our rentals come with a professional, experienced driver. Fuel cost is generally included in the package.</p>
+                </div>
+                <div class="faq-item">
+                    <h4><i class="fas fa-question-circle"></i> What areas do you serve?</h4>
+                    <p>We primarily serve Patna, Gaya, Rajgir, Nalanda, and all major cities in Bihar. We also provide outstation trips.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="site-footer">
+        <svg class="footer-top-wave" viewBox="0 0 1200 18" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M0,9 Q30,0 60,9 T120,9 T180,9 T240,9 T300,9 T360,9 T420,9 T480,9 T540,9 T600,9 T660,9 T720,9 T780,9 T840,9 T900,9 T960,9 T1020,9 T1080,9 T1140,9 T1200,9" fill="none" stroke="#E2A73B" stroke-width="1.5" opacity="0.5"/>
+        </svg>
+        <div class="container">
+            <div class="footer-main">
+                <div class="footer-brand-col">
+                    <div class="footer-brand">
+                        <div class="logo-mark" aria-hidden="true">
+                            <svg viewBox="0 0 40 40" xmlns="http://www.w3.org/2000/svg">
+                                <circle cx="20" cy="20" r="9" fill="#E2A73B"/>
+                                <g stroke="#FBF1DE" stroke-width="2" stroke-linecap="round">
+                                    <line x1="20" y1="2" x2="20" y2="8"/>
+                                    <line x1="20" y1="32" x2="20" y2="38"/>
+                                    <line x1="2" y1="20" x2="8" y2="20"/>
+                                    <line x1="32" y1="20" x2="38" y2="20"/>
+                                    <line x1="7" y1="7" x2="11.5" y2="11.5"/>
+                                    <line x1="28.5" y1="28.5" x2="33" y2="33"/>
+                                    <line x1="33" y1="7" x2="28.5" y2="11.5"/>
+                                    <line x1="11.5" y1="28.5" x2="7" y2="33"/>
+                                </g>
+                                <circle cx="20" cy="20" r="9" fill="none" stroke="#FBF1DE" stroke-width="2"/>
+                            </svg>
+                        </div>
+                        <h3>Mithila<span>Tours &amp; Travels</span></h3>
+                    </div>
+                    <p class="footer-about-text">Local car rental with driver, based in Laheriyaganj, Madhubani, Bihar. Weddings, events, and travel — no fixed packages, just the ride you need.</p>
+                </div>
+
+                <div class="footer-links-col">
+                    <h4>Quick Links</h4>
+                    <ul class="footer-links">
+                        <li><a href="index.html"><i class="fas fa-caret-right"></i> Home</a></li>
+                        <li><a href="services.html"><i class="fas fa-caret-right"></i> Services</a></li>
+                        <li><a href="booking.html"><i class="fas fa-caret-right"></i> Book Now</a></li>
+                        <li><a href="contact.html"><i class="fas fa-caret-right"></i> Contact</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-links-col">
+                    <h4>Our Services</h4>
+                    <ul class="footer-links">
+                        <li><a href="services.html"><i class="fas fa-caret-right"></i> Wedding Cars</a></li>
+                        <li><a href="services.html"><i class="fas fa-caret-right"></i> Local & Point-to-Point Travel</a></li>
+                        <li><a href="services.html"><i class="fas fa-caret-right"></i> Airport Transfer</a></li>
+                        <li><a href="services.html"><i class="fas fa-caret-right"></i> Outstation Trips</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-contact-col">
+                    <h4>Reach Us</h4>
+                    <div class="footer-contact-item">
+                        <i class="fas fa-phone-alt"></i>
+                        <div><a href="tel:+918169673379">+91 81696 73379</a></div>
+                    </div>
+                    <div class="footer-contact-item">
+                        <i class="fas fa-envelope"></i>
+                        <div><a href="mailto:toursandtravelsmithila@gmail.com">toursandtravelsmithila@gmail.com</a></div>
+                    </div>
+                    <div class="footer-contact-item">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <div>Laheriyaganj, Madhubani, Bihar</div>
+                    </div>
+                    <div class="footer-contact-item">
+                        <i class="fas fa-clock"></i>
+                        <div>Available 24/7</div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <p>&copy; 2024 Mithila Tours &amp; Travels. All Rights Reserved.</p>
+                <p class="made-with">Serving Madhubani &amp; all of Bihar <i class="fas fa-map-marker-alt"></i></p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Floating WhatsApp -->
+    <a href="https://wa.me/918169673379?text=Hi%2C%20I%20have%20a%20question" target="_blank" class="whatsapp-float" aria-label="Chat on WhatsApp"><i class="fab fa-whatsapp"></i></a>
+    <button class="scroll-top" id="scrollTopBtn" aria-label="Scroll to top"><i class="fas fa-arrow-up"></i></button>
+
+    <!-- Contact Form: sends via Formspree to toursandtravelsmithila@gmail.com -->
+    <script>
+        document.getElementById('contactForm').addEventListener('submit', function(event) {
+            event.preventDefault();
+            const form = this;
+            const btn = form.querySelector('.btn-submit');
+            const status = document.getElementById('formstatus');
+            const originalBtnText = btn.innerHTML;
+            btn.innerHTML = '<i class="fas fa-spinner fa-spin"></i> Sending...';
+            btn.disabled = true;
+
+            fetch(form.action, {
+                method: 'POST',
+                body: new FormData(form),
+                headers: { 'Accept': 'application/json' }
+            }).then(response => {
+                if (response.ok) {
+                    btn.innerHTML = '<i class="fas fa-check"></i> Message Sent!';
+                    status.innerHTML = '<span style="color: green;">Thank you! We will contact you within 24 hours.</span>';
+                    form.reset();
+                } else {
+                    throw new Error('Submit failed');
+                }
+            }).catch(() => {
+                btn.innerHTML = '<i class="fas fa-exclamation-triangle"></i> Try Again';
+                status.innerHTML = '<span style="color:#b91c1c;">Something went wrong. Please call or WhatsApp us instead.</span>';
+            }).finally(() => {
+                btn.disabled = false;
+                setTimeout(() => { btn.innerHTML = originalBtnText; btn.disabled = false; }, 3500);
+            });
+        });
+
+        // Mobile nav toggle
+        (function(){
+            var ham = document.querySelector('.hamburger');
+            var nav = document.querySelector('.nav-links');
+            var overlay = document.querySelector('.nav-overlay');
+            ham.addEventListener('click', function(){ nav.classList.toggle('active'); overlay.classList.toggle('active'); });
+            overlay.addEventListener('click', function(){ nav.classList.remove('active'); overlay.classList.remove('active'); });
+            document.querySelectorAll('.nav-links a').forEach(function(a){
+                a.addEventListener('click', function(){ nav.classList.remove('active'); overlay.classList.remove('active'); });
+            });
+        })();
+        // Scroll to top
+        (function(){
+            var btn = document.getElementById('scrollTopBtn');
+            window.addEventListener('scroll', function(){ btn.classList.toggle('show', window.scrollY > 400); });
+            btn.addEventListener('click', function(){ window.scrollTo({top:0, behavior:'smooth'}); });
+        })();
+        // Reveal on scroll
+        (function(){
+            var items = document.querySelectorAll('.contact-form, .contact-info-card, .faq-item');
+            items.forEach(function(el){ el.classList.add('reveal'); });
+            var obs = new IntersectionObserver(function(entries){
+                entries.forEach(function(entry){ if(entry.isIntersecting){ entry.target.classList.add('in-view'); obs.unobserve(entry.target); } });
+            }, {threshold: 0.15});
+            items.forEach(function(el){ obs.observe(el); });
+        })();
+    </script>
+</body>
+</html>
